@@ -31,10 +31,10 @@
     "migrate:reset": "yarn sequelize-cli db:drop && yarn setup_test_db",
     "setup_test_db": "yarn sequelize-cli db:create && yarn sequelize-cli db:migrate && yarn sequelize-cli db:seed:all --seeders-path src/test_seeder",
     "deploy": "node start.js",
-    "db:migrate": "sequelize-cli db:migrate",
-    "db:seed": "sequelize-cli db:seed:all",
-    "db:drop": "sequelize-cli db:drop",
-    "db:create": "sequelize-cli db:create",
+    "db:migrate": "sequelize db:migrate",
+    "db:seed": "sequelize db:seed:all",
+    "db:drop": "sequelize db:drop",
+    "db:create": "sequelize db:create",
     "db:reset": "run-s db:drop db:create"
   },
   "devDependencies": {
